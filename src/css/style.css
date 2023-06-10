@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 136px;
+    font-size: 19px;
+    background-color: black;
+    color: white;
+    padding-inline: 100px;
+}
+
+header nav .menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+    align-self: center;
+}
+
+header nav .menu a {
+    color: white;
+}
+
+header nav .menu a:hover {
+    color: #d34149;
+}
+
+header img {
+    width: 150px;
+}
+
+.banner {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    width: 100%;
+    min-height: calc(100vh - 130px); 
+    padding-inline: 100px;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+
+.banner #texts {
+    margin-top: -35px;
+    width: 50%;
+}
+
+.banner #texts h1 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 120px;
+}
+
+.banner #texts h1 span {
+    font-size: 168px;
+    color: #ce1821;
+}
+
+.banner .circle {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ce1821;
+    clip-path: circle(52% at bottom right);
+}
+
+.circle .images {
+    position: absolute;
+    bottom: -30px;
+    right: -30px;
+    padding: 0;
+}
+
+.circle .images img {
+    height: 250px;
+}
+
+.circle .images #coke-bottle {
+    height: 460px;
+    padding-left: 20px;
+}
+
+circle .images #coke-can {
+    transform: rotate(-15deg);
+}
+
+
+.banner #button {
+    display: inline-block;
+    margin-top: 50px;
+    padding: 10px 30px;
+    border-radius: 40px;
+    background-color: #ce1821;
+    color: white;
+    text-transform: uppercase;
+    transition: 0.3s ease-in-out;
+}
+
+.banner #button:hover {
+    transform: translateY(-10px);
+}
+
+.banner #button:hover ~ .social-media i {
+    color: #1b1b72;
+}
+
+.social-media {
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+    margin-top: 40px;
+    padding-bottom: 40px;
+}
+
+.social-media a {
+    color: #202085;
+}
+
+.social-media a:hover i {
+    transform: translateY(-10px);
+    transform: scale(1.04);
+}
+
